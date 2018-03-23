@@ -1,6 +1,6 @@
 git submodule init
 git submodule update
-ln -s config/laradock/.env laradock/.env
-ln -s config/laravel/.env laravel/.env
+ln -s ../config/laradock/.env laradock/.env
+ln -s ../config/laravel/.env laravel/.env
 cd laravel
 composer install && php artisan key:generate
